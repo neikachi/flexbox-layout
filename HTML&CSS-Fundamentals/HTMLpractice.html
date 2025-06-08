@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Learn HTML</title>
+    </head>
+    <body>
+        <style>
+            .helloworld {
+                color: purple;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+        </style>
+        <header class="helloworld" id="top">
+            <h1>Learn HTML</h1>
+            <p>By Curious Byte</p>       
+        </header>
+        <section>
+            <h2>Learning HTML</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laboriosam placeat consequatur architecto repellat. Qui adipisci, molestiae officia ex iusto aut quasi tempora temporibus inventore unde aliquam ratione id impedit!</p>
+        </section>
+
+
+        <video width="100%" height="100%" 
+        src = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+        type="video/mp4"
+            controls
+            autoplay
+        ></video>
+
+        <form>
+            <label for="file">Form Progress</label>
+            <progress id="file" value="25" max="100">25%</progress>
+            <label for ="name">Name:</label>
+            <input name = "name" required="required" type="text">
+
+            <label for ="email"> Email:</label>
+            <input type ="email" required="required" name ="email">
+            
+            <label for="telephone">Tel:</label>
+            <input name="telephone" type="number">
+
+            <select>
+                <option>Choice1</option>
+                <option>Choice2</option>
+                <option>Choice3</option>
+            </select>
+
+
+            <label for="termsandservices">Do you agree to our terms and serveices?</label>
+            <input type="checkbox" name="termsandservices">
+            <button>Submit</button>
+
+            
+        </form>
+
+        <footer>
+            <p>Curious Byte - <span class="underline">Copyright 2020</span></p>
+            <a href="#Top">Top</a>
+        </footer>
+    </body>
+
+</html>

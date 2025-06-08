@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Classes Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+
+        .button{
+            background-color: #4CAF50; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1 rem;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: #6845a0;
+        }
+
+        .input:focus {
+            border: 5px solid red;
+            outline: 0;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: #938ec2;
+            border: 5px dashed red;
+        }
+
+        ul li:nth-child(even) {
+            background-color: green;
+        }
+
+        ul li:nth-child(3){
+            background: yellow;
+        }
+
+        ul li:first-child {
+            font-weight: bold;
+        }
+        
+        ul li:last-child {
+            font-style: italic
+        }
+
+        ul li:not(:first-child):not(:last-child) {
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-Classes Tutorial</h1>
+
+    <section>
+        <h2>1. :hover</h2>
+        <button class="button">Hover over me!</button>
+    </section>
+
+    <section>
+        <h2>2. :focus</h2>
+        <input class="input" type="text" placeholder="Focus on me!">  
+    </section>
+
+    <section>
+        <h2> 3. :nth-child</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. a:visited</h2>
+        <a href="pseudo-classes.html">Visited Link</a>
+    </section>
+
+</body>
+</html>
